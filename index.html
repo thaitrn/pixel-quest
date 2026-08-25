@@ -8,8 +8,7 @@
 <style>
   html, body { margin: 0; padding: 0; background: #0b0e1a; height: 100%; overflow: hidden; touch-action: none; }
   #app { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
-  /* ENVELOP: canvas được scale vượt viewport để fill (crop mép), KHÔNG giới hạn max-w/h */
-  canvas { image-rendering: pixelated; image-rendering: crisp-edges; }
+  canvas { image-rendering: pixelated; image-rendering: crisp-edges; touch-action: none; }
   /* CRT scanline overlay */
   #crt { position: fixed; inset: 0; pointer-events: none; z-index: 50;
     background: repeating-linear-gradient(0deg, rgba(0,0,0,0.12) 0 1px, transparent 1px 3px); }
@@ -50,7 +49,7 @@
     #rotate-hint { display: flex; }
   }
 </style>
-  <script type="module" crossorigin src="./assets/index-Wawsjh-A.js"></script>
+  <script type="module" crossorigin src="./assets/index-BDiLx1ol.js"></script>
 </head>
 <body>
 <div id="app"></div>
