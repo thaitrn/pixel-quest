@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="theme-color" content="#0b0e1a" />
+<title>Pixel Quest</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e1a; height: 100%; overflow: hidden; touch-action: none; }
+  #app { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+  canvas { image-rendering: pixelated; image-rendering: crisp-edges; touch-action: none; }
+  /* CRT scanline overlay */
+  #crt { position: fixed; inset: 0; pointer-events: none; z-index: 50;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.12) 0 1px, transparent 1px 3px); }
+  /* Touch overlay */
+  #touch-ui { position: fixed; inset: 0; z-index: 40; display: none; pointer-events: none; }
+  #touch-ui.visible { display: block; }
+  /* Tap-to-act zones: nửa trái = trái, nửa phải = nhảy (pointer-events:auto, trong suốt) */
+  .zone { position: absolute; top: 0; bottom: 0; pointer-events: auto; touch-action: none; }
+  #zone-left  { left: 0; width: 50%; }
+  #zone-right { right: 0; width: 50%; }
+  /* Hint mờ chỉ visual */
+  .hint { position: absolute; font: bold 26px monospace; color: rgba(255,255,255,.28);
+    user-select: none; pointer-events: none; }
+  #hint-left  { left: 20px;  bottom: 18px; }
+  #hint-right { right: 20px; bottom: 18px; }
+  /* Pause 48px (chuẩn touch target). Đặt GÓC TRÁI TRÊN (ít rủi ro hơn góc phải):
+     bên phải là tap-jump — pause đè lên đó gây nhảy nhầm; bên trái chỉ là giữ-đi-trái,
+     tap nhầm vào pause chỉ làm nhân vật đi trái 1 nhịp (vô hại), không có tap-action. */
+  #btn-pause { position: absolute; left: 14px; top: 12px; width: 48px; height: 48px; border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.1); color: #fff;
+    font: bold 17px monospace; display: flex; align-items: center; justify-content: center;
+    user-select: none; pointer-events: auto; touch-action: none; }
+  #btn-pause:active { background: rgba(255,255,255,.3); }
+  /* Orientation hint — mobile portrait: FIT mode 2:1 để 2 viền đen to,
+     hướng dẫn user xoay ngang để canvas fill màn hình */
+  #touch-ui.visible .zone, #touch-ui.visible #btn-pause, #touch-ui.visible .hint { display: none; }
+  #touch-ui.visible.in-game:not(.overlay-open) .zone,
+  #touch-ui.visible.in-game:not(.overlay-open) .hint,
+  #touch-ui.visible.in-game:not(.overlay-open) #btn-pause { display: block; }
+  #touch-ui.overlay-open .zone, #touch-ui.overlay-open #btn-pause { display: none; }
+  #rotate-hint { position: fixed; inset: 0; z-index: 100; display: none;
+    flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+    background: #0b0e1a; color: #e0e0ff; font: 18px monospace; text-align: center; padding: 24px; }
+  #rotate-hint .phone { font-size: 48px; animation: rot 1.6s ease-in-out infinite alternate; }
+  @keyframes rot { from { transform: rotate(0deg); } to { transform: rotate(-90deg); } }
+  /* Chỉ hiện hint trên thiết bị cảm ứng (mobile), không trên desktop hẹp */
+  @media (orientation: portrait) and (pointer: coarse) and (max-width: 820px) {
+    #rotate-hint { display: flex; }
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="crt"></div>
+<div id="touch-ui">
+  <div class="zone" id="zone-left"></div>
+  <div class="zone" id="zone-right"></div>
+  <div class="hint" id="hint-left">◀ giữ</div>
+  <div class="hint" id="hint-right">giữ ▶ · tap nhảy ▲</div>
+  <div id="btn-pause">II</div>
+</div>
+<div id="rotate-hint" aria-hidden="true">
+  <div class="phone">📱</div>
+  <div><b>Xoay ngang để chơi</b></div>
+  <div style="color:#8a8aa0;font-size:14px">Trò chơi hiển thị tốt nhất ở chế độ ngang</div>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
