@@ -1,0 +1,232 @@
+{
+  "design_status": "DESIGN-READY-FOR-CEO-REVIEW",
+  "credits": {
+    "before": 190,
+    "after": 118,
+    "used": 72,
+    "task_cap": 40,
+    "cap_overrun": 32,
+    "reserve_requirement": 30,
+    "reserve_preserved": true,
+    "action": "Stopped all paid generation after the first job revealed the overrun."
+  },
+  "source": {
+    "provider": "Meowa",
+    "job_id": "job_54ad3775080a40119d5c2835ca2bf44b",
+    "file": "assets/meowa/source/core-pack/An_original_bright_16-bit_side-scrolling_platformer_asset_sheet_one_small_red_comet_explorer_hero_facing_right_2f29a205/sprite_00.png",
+    "dimensions": [
+      540,
+      387
+    ],
+    "mode": "RGBA",
+    "capability": "pixel-universal-gen-run"
+  },
+  "postprocess": "Deterministic crop/pad/composite only; nearest-neighbor for integer scaling; no generative edits.",
+  "palette": {
+    "navy": "#0b0e1a",
+    "panel": "#1e2a4a",
+    "mint": "#06d6a0",
+    "coral": "#ef476f",
+    "gold": "#ffd166",
+    "text": "#e0e0ff",
+    "sky": "#17295b"
+  },
+  "selected": [
+    {
+      "file": "assets/meowa/selected/collectible-coin.png",
+      "dimensions": [
+        62,
+        63
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Score coin"
+    },
+    {
+      "file": "assets/meowa/selected/collectible-double-jump.png",
+      "dimensions": [
+        63,
+        67
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Double-jump power-up"
+    },
+    {
+      "file": "assets/meowa/selected/collectible-heart.png",
+      "dimensions": [
+        65,
+        57
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Heal power-up"
+    },
+    {
+      "file": "assets/meowa/selected/collectible-speed.png",
+      "dimensions": [
+        67,
+        61
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Speed power-up"
+    },
+    {
+      "file": "assets/meowa/selected/collectible-star.png",
+      "dimensions": [
+        63,
+        60
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Star power-up"
+    },
+    {
+      "file": "assets/meowa/selected/gamehub-app-icon-512.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "purpose": "GameHub app icon"
+    },
+    {
+      "file": "assets/meowa/selected/gamehub-cover-1200x630.png",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "purpose": "GameHub cover"
+    },
+    {
+      "file": "assets/meowa/selected/hazard-bat.png",
+      "dimensions": [
+        100,
+        74
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Chaser enemy"
+    },
+    {
+      "file": "assets/meowa/selected/hazard-slime.png",
+      "dimensions": [
+        81,
+        72
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Patrol enemy"
+    },
+    {
+      "file": "assets/meowa/selected/hazard-spike.png",
+      "dimensions": [
+        61,
+        69
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Static hazard"
+    },
+    {
+      "file": "assets/meowa/selected/hero-blue.png",
+      "dimensions": [
+        81,
+        135
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Blue cosmetic hero"
+    },
+    {
+      "file": "assets/meowa/selected/hero-green.png",
+      "dimensions": [
+        82,
+        135
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Green cosmetic hero; unlock after five levels"
+    },
+    {
+      "file": "assets/meowa/selected/hero-red.png",
+      "dimensions": [
+        85,
+        135
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Default hero and product identity"
+    },
+    {
+      "file": "assets/meowa/selected/hero-yellow.png",
+      "dimensions": [
+        83,
+        135
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Yellow cosmetic hero; unlock after five levels"
+    },
+    {
+      "file": "assets/meowa/selected/ui-controls.png",
+      "dimensions": [
+        78,
+        138
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Text-free control and HUD motif source"
+    }
+  ],
+  "contact_sheet": "assets/meowa/contact-sheet.png"
+}

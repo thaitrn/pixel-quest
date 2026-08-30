@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "job_id": "job_54ad3775080a40119d5c2835ca2bf44b",
+  "outputs": [
+    {
+      "type": "media",
+      "path": "assets/meowa/source/core-pack/An_original_bright_16-bit_side-scrolling_platformer_asset_sheet_one_small_red_comet_explorer_hero_facing_right_2f29a205/sprite_00.png",
+      "mime_type": "image/png"
+    }
+  ]
+}

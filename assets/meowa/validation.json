@@ -1,0 +1,233 @@
+{
+  "status": "PASS",
+  "validated_files": 15,
+  "expected_selected_files": 15,
+  "job_id": "job_54ad3775080a40119d5c2835ca2bf44b",
+  "credits": {
+    "before": 190,
+    "after": 118,
+    "used": 72,
+    "task_cap": 40,
+    "cap_overrun": 32,
+    "reserve_requirement": 30,
+    "reserve_preserved": true,
+    "action": "Stopped all paid generation after the first job revealed the overrun."
+  },
+  "checks": [
+    {
+      "file": "assets/meowa/selected/collectible-coin.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        62,
+        63
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Score coin"
+    },
+    {
+      "file": "assets/meowa/selected/collectible-double-jump.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        63,
+        67
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Double-jump power-up"
+    },
+    {
+      "file": "assets/meowa/selected/collectible-heart.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        65,
+        57
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Heal power-up"
+    },
+    {
+      "file": "assets/meowa/selected/collectible-speed.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        67,
+        61
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Speed power-up"
+    },
+    {
+      "file": "assets/meowa/selected/collectible-star.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        63,
+        60
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Star power-up"
+    },
+    {
+      "file": "assets/meowa/selected/gamehub-app-icon-512.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "purpose": "GameHub app icon"
+    },
+    {
+      "file": "assets/meowa/selected/gamehub-cover-1200x630.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "purpose": "GameHub cover"
+    },
+    {
+      "file": "assets/meowa/selected/hazard-bat.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        100,
+        74
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Chaser enemy"
+    },
+    {
+      "file": "assets/meowa/selected/hazard-slime.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        81,
+        72
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Patrol enemy"
+    },
+    {
+      "file": "assets/meowa/selected/hazard-spike.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        61,
+        69
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Static hazard"
+    },
+    {
+      "file": "assets/meowa/selected/hero-blue.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        81,
+        135
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Blue cosmetic hero"
+    },
+    {
+      "file": "assets/meowa/selected/hero-green.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        82,
+        135
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Green cosmetic hero; unlock after five levels"
+    },
+    {
+      "file": "assets/meowa/selected/hero-red.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        85,
+        135
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Default hero and product identity"
+    },
+    {
+      "file": "assets/meowa/selected/hero-yellow.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        83,
+        135
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Yellow cosmetic hero; unlock after five levels"
+    },
+    {
+      "file": "assets/meowa/selected/ui-controls.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        78,
+        138
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "purpose": "Text-free control and HUD motif source"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Validation opens and decodes every PNG and checks format/dimensions/alpha; final aesthetic approval remains CEO's contact-sheet gate.",
+    "Directory has no .git metadata, so commit/status/remote evidence cannot be produced without a source-of-truth decision."
+  ]
+}
