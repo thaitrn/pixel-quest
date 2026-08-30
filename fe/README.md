@@ -3,6 +3,8 @@
 Platformer retro 2D pixel art — Phaser 3 + TypeScript strict + Vite.
 Scope M1–M2 theo production-plan.md: 10 level / 2 world, HUD, menu, pause, rewarded-ad revive (stub), responsive + mobile touch.
 
+Production deploy: Vercel project `pixel-quest`, GitHub `thaitrn/pixel-quest` branch `main`, root `fe`, Node 22.x. GitHub Pages root remains rollback until QA-PASS.
+
 ## Chạy
 
 ```bash
